@@ -25,7 +25,7 @@ ReArtify-AI is an innovative tool designed to restore damaged paintings using cu
 ### Before and After Restoration
 Below is an example of a damaged painting repaired using ReArtify-AI:
 
-<div style="text-align: center;">
+<div align= "center">
   <table style="margin: auto;">
     <tr>
       <th>Damaged Input</th>
@@ -78,7 +78,7 @@ The grid below showcases the results of the inpainting process, where missing re
 - **Result Accuracy**: The restored regions blend seamlessly with the surrounding image.
 ## Evaluation
 Evaluations of the quality were carried out via 4 metrics: PSNR, FID, SSIM, MSE, for an overall view of the model's quality performance.
-<div style="text-align: center;">
+<div align="center">
   <table style="margin: auto; text-align: center;">
     <tr>
       <th>Model</th>
