@@ -20,6 +20,23 @@ ReArtify-AI is an innovative tool designed to restore damaged paintings using cu
     - A custom mask generator combines detection, dilation, and erosion techniques to prepare damaged areas for repair.
     - Stability AI's **Stable Diffusion Inpainting 2.0** model restores missing regions with remarkable accuracy.
 
+## Results
+
+### Before and After Restoration
+Below is an example of a damaged painting repaired using ReArtify-AI:
+
+| **Damaged Input** | **Restored Output** |
+|--------------------|---------------------|
+| ![Damaged Painting](_Images/images_test/blur/3.jpg) | ![Restored Painting](_Images/Output/images_test_results/blur/3.jpg) |
+
+---
+
+### Process Example
+1. **Uploaded Image**: The input painting was analyzed to determine the damage type.
+2. **Damage Classification**: The classifier identified the damage as "Blur"
+3. **Repair**: The corresponding CNN model repaired the image with the following results:
+
+
 ## Installation and Setup
 To reduce repository size:
 1. **Frontend Dependencies**:
