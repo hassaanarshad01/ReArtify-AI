@@ -75,13 +75,45 @@ The grid below showcases the results of the inpainting process, where missing re
 - **Model Used**: Stability AI's **Stable Diffusion Inpainting 2.0**.
 - **Result Accuracy**: The restored regions blend seamlessly with the surrounding image.
 ## Evaluation
-Evaluations of the quality were carried out via 4 metrics: PSNR, FID, SSIM, MSE, for an overall view of the model's quality performance:
-| Model       | PSNR   | FID    | SSIM    | MSE    |
-|-------------|--------|--------|---------|--------|
-| Blur        | 20.93  | 31.53  | 0.613   | 0.011  |
-| Discolored  | 23.52  | 10.07  | 0.775   | 0.005  |
-| Scratches   | 25.21  | 14.49  | 0.861   | 0.004  |
-| Smudged     | 19.65  | 14.53  | 0.601   | 0.011  |
+Evaluations of the quality were carried out via 4 metrics: PSNR, FID, SSIM, MSE, for an overall view of the model's quality performance.
+<table style="margin: auto; text-align: center;">
+  <tr>
+    <th>Model</th>
+    <th>PSNR</th>
+    <th>FID</th>
+    <th>SSIM</th>
+    <th>MSE</th>
+  </tr>
+  <tr>
+    <td>Blur</td>
+    <td>20.93</td>
+    <td>31.53</td>
+    <td>0.613</td>
+    <td>0.011</td>
+  </tr>
+  <tr>
+    <td>Discolored</td>
+    <td>23.52</td>
+    <td>10.07</td>
+    <td>0.775</td>
+    <td>0.005</td>
+  </tr>
+  <tr>
+    <td>Scratches</td>
+    <td>25.21</td>
+    <td>14.49</td>
+    <td>0.861</td>
+    <td>0.004</td>
+  </tr>
+  <tr>
+    <td>Smudged</td>
+    <td>19.65</td>
+    <td>14.53</td>
+    <td>0.601</td>
+    <td>0.011</td>
+  </tr>
+</table>
+
 
 ## Installation and Setup
 To reduce repository size:
