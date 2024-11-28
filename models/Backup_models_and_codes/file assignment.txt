@@ -1,0 +1,3 @@
+put them in their respective model folders
+
+init goes in models folder root
