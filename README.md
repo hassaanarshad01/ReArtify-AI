@@ -25,28 +25,30 @@ ReArtify-AI is an innovative tool designed to restore damaged paintings using cu
 ### Before and After Restoration
 Below is an example of a damaged painting repaired using ReArtify-AI:
 
-<table>
-  <tr>
-    <th>Damaged Input</th>
-    <th>Restored Output</th>
-  </tr>
-  <tr>
-    <td><img src="_Images/images_test/blur/3.jpg" alt="Damaged Painting" width="250"></td>
-    <td><img src="_Images/Output/images_test_results/blur/3.jpg" alt="Restored Painting" width="250"></td>
-  </tr>
-  <tr>
-    <td><img src="_Images/images_test/discolored/3.jpg" alt="Damaged Painting" width="250"></td>
-    <td><img src="_Images/Output/images_test_results/discolored/3.jpg" alt="Restored Painting" width="250"></td>
-  </tr>
-  <tr>
-    <td><img src="_Images/images_test/scratches/3.jpg" alt="Damaged Painting" width="250"></td>
-    <td><img src="_Images/Output/images_test_results/scratches/3.jpg" alt="Restored Painting" width="250"></td>
-  </tr>
-  <tr>
-    <td><img src="_Images/images_test/smudged/3.jpg" alt="Damaged Painting" width="250"></td>
-    <td><img src="_Images/Output/images_test_results/smudged/3.jpg" alt="Restored Painting" width="250"></td>
-  </tr>
-</table>
+<div style="text-align: center;">
+  <table style="margin: auto;">
+    <tr>
+      <th>Damaged Input</th>
+      <th>Restored Output</th>
+    </tr>
+    <tr>
+      <td><img src="_Images/images_test/blur/3.jpg" alt="Damaged Painting" width="250"></td>
+      <td><img src="_Images/Output/images_test_results/blur/3.jpg" alt="Restored Painting" width="250"></td>
+    </tr>
+    <tr>
+      <td><img src="_Images/images_test/discolored/3.jpg" alt="Damaged Painting" width="250"></td>
+      <td><img src="_Images/Output/images_test_results/discolored/3.jpg" alt="Restored Painting" width="250"></td>
+    </tr>
+    <tr>
+      <td><img src="_Images/images_test/scratches/3.jpg" alt="Damaged Painting" width="250"></td>
+      <td><img src="_Images/Output/images_test_results/scratches/3.jpg" alt="Restored Painting" width="250"></td>
+    </tr>
+    <tr>
+      <td><img src="_Images/images_test/smudged/3.jpg" alt="Damaged Painting" width="250"></td>
+      <td><img src="_Images/Output/images_test_results/smudged/3.jpg" alt="Restored Painting" width="250"></td>
+    </tr>
+  </table>
+</div>
 ---
 
 ### Process Example
@@ -76,43 +78,45 @@ The grid below showcases the results of the inpainting process, where missing re
 - **Result Accuracy**: The restored regions blend seamlessly with the surrounding image.
 ## Evaluation
 Evaluations of the quality were carried out via 4 metrics: PSNR, FID, SSIM, MSE, for an overall view of the model's quality performance.
-<table style="margin: auto; text-align: center;">
-  <tr>
-    <th>Model</th>
-    <th>PSNR</th>
-    <th>FID</th>
-    <th>SSIM</th>
-    <th>MSE</th>
-  </tr>
-  <tr>
-    <td>Blur</td>
-    <td>20.93</td>
-    <td>31.53</td>
-    <td>0.613</td>
-    <td>0.011</td>
-  </tr>
-  <tr>
-    <td>Discolored</td>
-    <td>23.52</td>
-    <td>10.07</td>
-    <td>0.775</td>
-    <td>0.005</td>
-  </tr>
-  <tr>
-    <td>Scratches</td>
-    <td>25.21</td>
-    <td>14.49</td>
-    <td>0.861</td>
-    <td>0.004</td>
-  </tr>
-  <tr>
-    <td>Smudged</td>
-    <td>19.65</td>
-    <td>14.53</td>
-    <td>0.601</td>
-    <td>0.011</td>
-  </tr>
-</table>
+<div style="text-align: center;">
+  <table style="margin: auto; text-align: center;">
+    <tr>
+      <th>Model</th>
+      <th>PSNR</th>
+      <th>FID</th>
+      <th>SSIM</th>
+      <th>MSE</th>
+    </tr>
+    <tr>
+      <td>Blur</td>
+      <td>20.93</td>
+      <td>31.53</td>
+      <td>0.613</td>
+      <td>0.011</td>
+    </tr>
+    <tr>
+      <td>Discolored</td>
+      <td>23.52</td>
+      <td>10.07</td>
+      <td>0.775</td>
+      <td>0.005</td>
+    </tr>
+    <tr>
+      <td>Scratches</td>
+      <td>25.21</td>
+      <td>14.49</td>
+      <td>0.861</td>
+      <td>0.004</td>
+    </tr>
+    <tr>
+      <td>Smudged</td>
+      <td>19.65</td>
+      <td>14.53</td>
+      <td>0.601</td>
+      <td>0.011</td>
+    </tr>
+  </table>
+</div>
 
 
 ## Installation and Setup
