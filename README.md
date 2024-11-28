@@ -77,7 +77,8 @@ The grid below showcases the results of the inpainting process, where missing re
 ### Observations
 - **Model Used**: Stability AI's **Stable Diffusion Inpainting 2.0**.
 - **Result Accuracy**: The restored regions blend seamlessly with the surrounding image.
-## Evaluation
+## Evaluations
+### CNN models
 Evaluations of the quality were carried out via 4 metrics: PSNR, FID, SSIM, MSE, for an overall view of the model's quality performance.
 <div align="center">
   <table style="margin: auto; text-align: center;">
@@ -119,6 +120,11 @@ Evaluations of the quality were carried out via 4 metrics: PSNR, FID, SSIM, MSE,
   </table>
 </div>
 
+### Keras Classifier
+We plotted the confidence scores for multiple damage types, and checked accuracy, precision, recall, F1 score, and plotted a confusion matrix.
+<div align="center">
+  <img src="_evaluations/classifier.png" alt="Confidence score Result Grid" width="600">
+</div>
 
 ## Installation and Setup
 To reduce repository size:
