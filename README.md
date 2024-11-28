@@ -10,6 +10,7 @@ ReArtify-AI is an innovative tool designed to restore damaged paintings using cu
     - Blur
     - Discoloration
     - Smudge
+    - No damage
 - **Damage-Specific Repair**: 
   - **Custom CNN Models**: Four specialized CNN models handle restoration based on the identified damage type:
     - Scratches
