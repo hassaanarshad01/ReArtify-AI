@@ -122,6 +122,7 @@ Evaluations of the quality were carried out via 4 metrics: PSNR, FID, SSIM, MSE,
 
 ### Keras Classifier
 We plotted the confidence scores for multiple damage types, and checked accuracy, precision, recall, F1 score, and plotted a confusion matrix.
+During our training the best model achieved an accuracy of **0.9822** and the L1 loss came to be **0.046**
 <div align="center">
   <img src="_evaluations/classifier.png" alt="Confidence score Result Grid" width="600">
 </div>
