@@ -31,17 +31,48 @@ Below is an example of a damaged painting repaired using ReArtify-AI:
     <th>Restored Output</th>
   </tr>
   <tr>
-    <td><img src="_Images/images_test/blur/3.jpg" alt="Damaged Painting" width="300"></td>
-    <td><img src="_Images/Output/images_test_results/blur/3.jpg" alt="Restored Painting" width="300"></td>
+    <td><img src="_Images/images_test/blur/3.jpg" alt="Damaged Painting" width="250"></td>
+    <td><img src="_Images/Output/images_test_results/blur/3.jpg" alt="Restored Painting" width="250"></td>
+  </tr>
+  <tr>
+    <td><img src="_Images/images_test/discolored/3.jpg" alt="Damaged Painting" width="250"></td>
+    <td><img src="_Images/Output/images_test_results/discolored/3.jpg" alt="Restored Painting" width="250"></td>
+  </tr>
+  <tr>
+    <td><img src="_Images/images_test/scratches/3.jpg" alt="Damaged Painting" width="250"></td>
+    <td><img src="_Images/Output/images_test_results/scratches/3.jpg" alt="Restored Painting" width="250"></td>
+  </tr>
+  <tr>
+    <td><img src="_Images/images_test/smudged/3.jpg" alt="Damaged Painting" width="250"></td>
+    <td><img src="_Images/Output/images_test_results/smudged/3.jpg" alt="Restored Painting" width="250"></td>
   </tr>
 </table>
 ---
 
 ### Process Example
 1. **Uploaded Image**: The input painting was analyzed to determine the damage type.
-2. **Damage Classification**: The classifier identified the damage as "Blur"
-3. **Repair**: The corresponding CNN model repaired the image with the following results:
+2. **Damage Classification**: The classifier identified the damage correctly
+3. **Repair**: The corresponding CNN model repaired the image with the displayed results.
 
+## Inpainting Results
+
+The grid below showcases the results of the inpainting process, where missing regions in the damaged painting are restored using **Stable Diffusion Inpainting 2.0**.
+
+<div align="center">
+  <img src="_Images/Output/images_test_results/inpainting_result_grids/grid_1.png" alt="Inpainting Result Grid" width="600">
+</div>
+
+---
+
+### Explanation
+1. **Input Image**: The damaged painting with missing regions, representation of missing reigon given by user through the UI. Any part the user determines to be missing, they can cover in color #ffffff through the UI.
+2. **Mask Generation**: A basic mask is created representing the areas of the painting with color **#ffffff**
+3. **Mask Processing**: The mask is then passed through a dynamic dilation and erosion algorithm, allowing area outside the missing area to be covered. This is done to give the model context about the painting it's supposed to inpaint.
+4. **Restoration**: Missing regions are restored with fine detail using the inpainting model.
+
+### Observations
+- **Model Used**: Stability AI's **Stable Diffusion Inpainting 2.0**.
+- **Result Accuracy**: The restored regions blend seamlessly with the surrounding image.
 
 ## Installation and Setup
 To reduce repository size:
