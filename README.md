@@ -74,6 +74,14 @@ The grid below showcases the results of the inpainting process, where missing re
 ### Observations
 - **Model Used**: Stability AI's **Stable Diffusion Inpainting 2.0**.
 - **Result Accuracy**: The restored regions blend seamlessly with the surrounding image.
+## Evaluation
+Evaluations of the quality were carried out via 4 metrics: PSNR, FID, SSIM, MSE, for an overall view of the model's quality performance:
+| Model       | PSNR   | FID    | SSIM    | MSE    |
+|-------------|--------|--------|---------|--------|
+| Blur        | 20.93  | 31.53  | 0.613   | 0.011  |
+| Discolored  | 23.52  | 10.07  | 0.775   | 0.005  |
+| Scratches   | 25.21  | 14.49  | 0.861   | 0.004  |
+| Smudged     | 19.65  | 14.53  | 0.601   | 0.011  |
 
 ## Installation and Setup
 To reduce repository size:
