@@ -25,10 +25,16 @@ ReArtify-AI is an innovative tool designed to restore damaged paintings using cu
 ### Before and After Restoration
 Below is an example of a damaged painting repaired using ReArtify-AI:
 
-| **Damaged Input** | **Restored Output** |
-|--------------------|---------------------|
-| ![Damaged Painting](_Images/images_test/blur/3.jpg) | ![Restored Painting](_Images/Output/images_test_results/blur/3.jpg) |
-
+<table>
+  <tr>
+    <th>Damaged Input</th>
+    <th>Restored Output</th>
+  </tr>
+  <tr>
+    <td><img src="_Images/images_test/blur/3.jpg" alt="Damaged Painting" width="300"></td>
+    <td><img src="_Images/Output/images_test_results/blur/3.jpg" alt="Restored Painting" width="300"></td>
+  </tr>
+</table>
 ---
 
 ### Process Example
