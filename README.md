@@ -60,6 +60,7 @@ The grid below showcases the results of the inpainting process, where missing re
 
 <div align="center">
   <img src="_Images/Output/images_test_results/inpainting_result_grids/grid_1.png" alt="Inpainting Result Grid" width="600">
+  <img src="_Images/Output/images_test_results/inpainting_result_grids/grid_5.png" alt="Inpainting Result Grid" width="600">
 </div>
 
 ---
